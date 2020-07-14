@@ -1,0 +1,47 @@
+<html>
+<head>
+<script>
+
+
+var d = new Date();
+var dayList=["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+document.write("Today is : "+dayList[d.getDay()]+"\n");
+document.write("<br>");
+var h=d.getHours();
+//var h=15;
+if(h<12){
+    if(h<10){
+         h="0"+h;
+    }
+   var hh= h + " AM " ;
+   console.log(hh);
+}
+else{
+    h=h-12;
+    if(h<10){
+         h="0"+h;
+    }
+   var hh= h + " PM " ;
+   console.log(hh);
+}
+
+var m = d.getMinutes();
+//var m=2;
+if(m<10){
+    m="0"+m;
+}
+console.log(m);
+
+var s=d.getSeconds();
+if(s<10){
+    s="0"+s;
+   
+}
+ console.log(s);
+
+ document.write( "Current Time is :"+hh+": "+m+": "+s);
+</script>
+</head>
+<body>
+</body>
+</html>
