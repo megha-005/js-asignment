@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Print Date in dd-mm-yyyy Format</title>
+</head>
+<body>
+<script>
+var d= new Date();
+var dd=d.getDate();
+if(dd<10){
+    dd="0"+dd;
+}
+console.log(dd);
+
+var mm=d.getMonth()+1;
+if(mm<10){
+    mm="0"+mm;
+}
+console.log(mm);
+
+var yy=d.getFullYear();
+console.log(yy);
+
+document.write("Current Date is:" +dd +"-"+mm+"-"+yy);
+</script>
+</body>
+</html>
